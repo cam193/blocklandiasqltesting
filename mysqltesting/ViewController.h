@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeModel.h"
 
-@interface ViewController : UIViewController
+@interface labelPage : UIViewController <UITableViewDataSource, UITableViewDelegate, HomeModelProtocol>
 
+@property (strong, nonatomic) IBOutlet UITextView *labelName;
 
 @end
-
